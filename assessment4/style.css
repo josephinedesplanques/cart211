@@ -126,21 +126,20 @@ footer {
 @media (max-width: 600px) {
 
     nav {
-        position: static;
-        float: none;
-        width: 100%;
+
         margin: 0 0 30px 0;
-        padding: 12px 0;
-        line-height: normal;
+        width: 100%;
+        padding: 7px 0;
+        line-height: 10px;
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         background: #2d1b4e;
-    }
-
-    nav br {
-        display: none;
+        z-index: 1000;
+        color: white;
+        float: none;
     }
 
     nav a {
@@ -155,21 +154,16 @@ footer {
         line-height: 150%;
     }
 
-    header h1,
-    header h2 {
-        text-align: center;
-    }
+    main {
+    text-align: justify;
 
-    section {
-        text-align: left;
-    }
 
     .books {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
     }
 
-    footer {
-        text-align: center;
+    .books figcaption {
+        font-size: smaller;
     }
 }
