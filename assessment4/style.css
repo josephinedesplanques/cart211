@@ -1,17 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f7;
 }
-
-/*
-a{
-    color: black;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-
-}
-*/
 
 nav {
     margin-top: 50px;
@@ -21,71 +22,53 @@ nav {
     position: fixed;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     display: block;
 }
 
-nav a:hover{
+nav a:hover {
     color: darkgray;
-
 }
 
-#wrapper{
+#wrapper {
     margin-top: 50px;
     float: right;
     width: 60%;
-    margin-right: 50px; 
+    margin-right: 50px;
 }
 
-header h1{
+header h1 {
     text-align: right;
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-header h2{
+header h2 {
     text-align: right;
     font-size: 20px;
     margin-bottom: 30px;
-    margin-top: 0px;
+    margin-top: 0;
     color: darkgray;
 }
 
-main h3{
-    text-align: left;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    color: darkgray;
-}
-
-
-section{
+section {
     margin-bottom: 30px;
     text-align: justify;
-
 }
 
-.books{
+.books {
     display: grid;
-    grid-template-columns: auto auto auto;
-    max-width: 100%;
-    height: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
 }
 
-.books img{
+.books img {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.books > div{
-    text-align: center;
-    padding: 10px;
 }
 
 .books figure {
@@ -98,73 +81,78 @@ article figure figcaption {
     font-size: 12px;
 }
 
-article h3{
+article h3 {
     margin-bottom: 10px;
     color: darkgray;
-
 }
 
-article p:last-child{
+article p:last-child {
     margin-bottom: 50px;
 }
 
-header img{
+header img {
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 footer {
     margin-top: 20px;
     min-height: 30px;
     font-size: 15px;
-    font-weight: lighter; 
-    text-align: right; 
+    font-weight: lighter;
+    text-align: right;
     font-style: italic;
-
 }
 
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
 
-@media (max-width: 600px){
-    nav{
-        margin: 0 auto;
-        margin-bottom: 50px;
+    nav {
+        position: static;
+        float: none;
         width: 100%;
-        padding: 7px 0;
-        line-height: 10px;
-        position: relative;
+        margin: 0 0 30px 0;
+        padding: 12px 0;
+        line-height: normal;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         background: #2d1b4e;
-        z-index: 1000;
-        color: white;
-        float: none;
     }
 
-    nav a{
+    nav br {
+        display: none;
+    }
+
+    nav a {
         color: white;
     }
 
-#wrapper {
-    width: 90%;
-    margin: 0 auto;
+    #wrapper {
         float: none;
+        position: static;
+        width: 90%;
+        margin: 0 auto;
         line-height: 150%;
-}
+    }
 
-main {
-    text-align: justify;
+    header h1,
+    header h2 {
+        text-align: center;
+    }
 
-}
+    section {
+        text-align: left;
+    }
 
     .books {
-        grid-template-columns:repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
     }
 
-
-    .books figcaption {
-        font-size: smaller;
+    footer {
+        text-align: center;
     }
-
 }
