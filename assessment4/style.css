@@ -121,11 +121,3 @@ footer {
     font-style: italic;
 
 }
-
-@media (max-width: 480px){
-    .book{
-    grid-template-columns: auto auto;
-    gap: 16px;
-
-    }
-}
