@@ -145,7 +145,7 @@ footer {
         color: white;
     }
 
-.wrapper {
+#wrapper {
     margin-top: 500px;
     position: relative;
     width: 90%;
@@ -159,7 +159,7 @@ main {
 
 }
 
-    .book {
+    .books {
         grid-template-columns: auto auto;
         gap: 16px;
     }
