@@ -114,7 +114,7 @@ header img{
 
 footer {
     margin-top: 20px;
-    min-height: 3Opx;
+    min-height: 30px;
     font-size: 15px;
     font-weight: lighter; 
     text-align: right; 
@@ -129,7 +129,7 @@ footer {
     width: 100%;
     padding: 10px 0;
     line-height: 30px;
-    position: relative;
+    position: static;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,8 +144,6 @@ footer {
     }
 
     #wrapper{
-        margin-top: 500px;
-        position: relative;
         width: 90%;
         margin: 0 auto;
         float: none;
