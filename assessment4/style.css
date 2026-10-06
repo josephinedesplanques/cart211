@@ -122,7 +122,7 @@ footer {
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 600px){
     nav{
     margin: 0 auto;
     margin-bottom: 50px;
