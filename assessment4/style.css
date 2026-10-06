@@ -123,6 +123,7 @@ footer {
 }
 
 @media (max-width: 480px){
+    
     nav{
     margin: 0 auto;
     margin-bottom: 50px;
@@ -139,9 +140,11 @@ footer {
     color: white;
     float: none;
     }
+
 nav a{
 color: white;
     }
+
 #wrapper{
 margin-top: 500px;
 position: relative;
@@ -150,9 +153,11 @@ margin: 0 auto;
 float: none;
 line-height: 150%;
     }
+
 main{
 text-align: justify;
     }
+
 .books{
 grid-template-columns: auto auto;
 gap: 16px;
