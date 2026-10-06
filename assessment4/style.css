@@ -121,3 +121,50 @@ footer {
     font-style: italic;
 
 }
+
+@media (max-width: 480px){
+    nav{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 10px 0;
+    line-height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2d1b4e;
+    z-index: 1000;
+    color: white;
+    float: none;
+    }
+
+    nav a{
+    color: white;
+    }
+
+    #wrapper{
+        margin-top: 500px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        line-height: 150%;
+    }
+
+    main{
+        text-align: justify;
+    }
+
+    .books{
+    grid-template-columns: auto auto;
+    gap: 16px;
+
+    }
+
+    .books figcaption{
+        font-size: smaller;
+    }
+
+
+}
