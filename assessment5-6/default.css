@@ -385,7 +385,7 @@ nav a {
 }
 
 nav a:hover {
-    color: darkgrey;
+    color: purple;
     /* Change the link color when hovered over. */
 }
 
@@ -398,7 +398,7 @@ nav a:hover {
     text-align: right;
     /* Align the active menu item to the right. */
 
-    color: gray;
+    color: purple;
     /* Give the active item a gray color. */
 }
 
@@ -827,7 +827,7 @@ transition: transform 0.3s ease,
         text-decoration: none;
         /* Remove link underlines. */
 
-        color: gray;
+        color: purple;
         /* Set links to gray. */
 
         background-color: transparent;
