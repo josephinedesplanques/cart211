@@ -999,11 +999,11 @@ transition: transform 0.3s ease,
         flex-wrap: wrap;
         /* Allow items to wrap onto another line. */
 
-        border-bottom: 4px solid #000;
-        /* Add a black bottom border. */
+        border-bottom: 4px solid blue;
+        /* Add a blue bottom border. */
 
-        background: #000;
-        /* Make the navigation background black. */
+        background: purple;
+        /* Make the navigation background purple. */
 
         z-index: 1000;
         /* Keep navigation above most content. */
