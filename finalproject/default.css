@@ -12,9 +12,11 @@ body {
 }
 
 #wrapper {
+  position: relative;
+  z-index: 1;
   max-width: none;
-  margin: 24px;          
-  min-height: calc(100vh - 48px);
+  margin: 50px;          
+  min-height: calc(100vh - 100px);
   padding: clamp(16px, 3vw, 40px);
   background: #38e3d8;
   border: 3px solid white;
@@ -185,4 +187,41 @@ p {
     flex: 1 1 90px;
     padding: 0.6rem 0.4rem;
   }
+}
+
+
+/* ---------- Matrix background ---------- */
+
+#matrix {
+  position: fixed;
+  inset: 0;
+  z-index: -1;               
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: none;     
+  background: transparent;   
+  --cell: 2vmax;             
+}
+
+#matrix p {
+  margin: 0;
+  max-width: none;
+  line-height: 1;
+}
+
+#matrix span {
+  display: block;
+  width: var(--cell);
+  height: var(--cell);
+  font-size: calc(var(--cell) * 0.8);
+  color: rgba(255, 255, 255, 0.18);   
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  transition: color 1.5s;            
+}
+
+#matrix span.lit {
+  color: #fff;                       
+  transition: none;
 }
